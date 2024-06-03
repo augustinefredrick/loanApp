@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="holder">
+        <h1 id="Display"></h1>
+        <h1 class="header">LOAN APPLICATION</h1>
+        <div class="main">
+          <div>
+            Account Bal:
+            <input
+              placeholder="Enter balance"
+              type="text"
+              id="AccountBalance"
+            />
+          </div>
+          <div>
+            Loan Amount:
+            <input
+              placeholder="Enter loan amount required"
+              type="text"
+              id="loanAmount"
+            />
+          </div>
+          <div>
+            <label for="Credit History">Credit History</label>
+            <select id="Credit_History">
+              <option value=""></option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+            <p id="CreditHistoryError" class="error_msg">
+              Kindly pick an option
+            </p>
+          </div>
+          <div>
+            <p>Date of Last Deposit:</p>
+            <input type="date" id="date" />
+            <p id="LastdepositDateError1" class="error_msg">
+              kindly choose a date
+            </p>
+          </div>
+          <div>
+            <p>Last loan Collection Date:</p>
+            <input type="date" id="date3" />
+            <p id="LastLoanCollectiondateError" class="error_msg">
+              kindly choose a date
+            </p>
+          </div>
+          <div>
+            Loan Collection Date: <input type="date" id="date4" />
+            <p id="LoanRepaymentPeriodError" class="error_msg">
+              kindly Pick a Date
+            </p>
+          </div>
+          <div>
+            <label for="AccountType"> Account Type :</label>
+            <select id="AccountType">
+              <option value=""></option>
+              <option value="Saving">Saving</option>
+              <option value="Current">Current</option>
+            </select>
+            <p id="AccountTypeError" class="error_msg">Kindly Tick a Box</p>
+          </div>
+        </div>
+
+        <input type="submit" value="submit" id="submit" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
